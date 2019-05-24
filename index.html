@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="css/fontello.css" type="text/css" />
+  <link rel="stylesheet" href="flag-icon-css/css/flag-icon.min.css">
 
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
@@ -21,57 +22,92 @@
     <!-- Sidebar  -->
     <nav id="sidebar">
       <div class="sidebar-header">
-        <h3>Przemysław Kubacki</h3>
+        <h3 class="">Przemysław Kubacki</h3>
       </div>
       <ul class="list-unstyled components">
         <!-- <img src="photos/PrzemekKubacki.jpg" alt=""> -->
         <li class="active">
-          <a href="#" onclick="return show('page1','page2','page3','page4','page5');">About me</a>
+          <a href="#" onclick="return show('page1','page2','page3','page4','page5');"><span class="icon-user"></span>About me</a>
         </li>
         <li>
-          <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Projects</a>
+          <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="icon-database"></span>Projects</a>
           <ul class="collapse list-unstyled" id="pageSubmenu">
             <li>
-              <a href="#">Engineering Thesis</a>
+              <a href="#"><span class="icon-github-squared"></span>Engineering Thesis</a>
             </li>
             <li>
-              <a href="https://github.com/kubackip/RandomNumberGenerator.git" target="_blank">RandomNumberGenerator</a>
+              <a href="https://github.com/kubackip/RandomNumberGenerator.git" target="_blank"><span class="icon-github-squared"></span>RandomNumberGenerator</a>
             </li>
             <li>
-              <a href="#">Platform for collecting epidemiological data</a>
+              <a href="#"><span class="icon-github-squared"></span>Platform for collecting epidemiological data</a>
             </li>
             <li>
-              <a href="https://github.com/kubackip/CVResume.git" target="_blank">Resume Website</a>
+              <a href="https://github.com/kubackip/CVResume.git" target="_blank"><span class="icon-github-squared"></span>Resume Website</a>
             </li>
             <li>
-              <a href="">Historical Labirynth</a>
+              <a href=""><span class="icon-github-squared"></span>Historical Labirynth</a>
             </li>
             <li>
-              <a href="#">Concentration measurement games</a>
+              <a href="#"><span class="icon-github-squared"></span>Concentration measurement games</a>
             </li>
             <!-- ileśtam jeszcze -->
           </ul>
         </li>
         <li>
-          <a href="#" onclick="return show('page5','page1','page2','page3','page4')">Skills</a>
+          <a href="#" onclick="return show('page5','page1','page2','page3','page4')"><span class="icon-thumbs-up"></span>Skills</a>
         </li>
         <li>
-          <a href="#" onclick="return show('page2','page1','page3','page4','page5');">Education</a>
+          <a href="#" onclick="return show('page2','page1','page3','page4','page5');"><span class="icon-graduation-cap"></span> Education</a>
         </li>
         <li>
-          <a href="#" onclick="return show('page3','page1','page2','page4','page5');">Resume</a>
+          <a href="#" onclick="return show('page3','page1','page2','page4','page5');"><span class="icon-doc-inv"></span>Resume</a>
         </li>
         <li>
-          <a href="#" onclick="return show('page4','page1','page2','page3','page5')">Hobby</a>
+          <a href="#" onclick="return show('page4','page1','page2','page3','page5')"><span class="icon-star"></span>Hobby</a>
         </li>
       </ul>
+      <div class="icon-links">
+        <div class="row">
+          <div class="col">
+            <a id="github-icon" href="https://github.com/kubackip?tab=repositories" target="_blank"><span class="icon-links icon-github-circled grow"></span></a>
+          </div>
+          <div class="col">
+            <a id="linkedin-icon" href="https://www.linkedin.com/in/kubackip/" target="_blank"><span class="icon-links icon-linkedin grow"></span></a>
+          </div>
+          <div class="col">
+            <a id="email-icon" href="#" data-toggle="modal" data-target="#exampleModal"><span class="icon-links icon-mail-alt grow"></span></a>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">E-mail</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <a class="js-emaillink">przemek.kubacki@hotmail.com</a>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary js-emailcopybtn" data-toggle="popover" data-placement="bottom" data-content="Copied!" data-trigger="focus">Copy</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer"> Created by Przemysław Kubacki, 2019 </footer>
     </nav>
 
     <!-- Page Content  -->
     <div id="content">
 
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light shadow mb-5 bg-white rounded">
         <div class="container-fluid">
 
           <!-- Hamburger -->
@@ -85,7 +121,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="nav navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="#" onclick="return show('page1','page2','page3','page4');">Home</a>
+                <a class="nav-link" href="#" onclick="return show('page1','page2','page3','page4','page5');">Home</a>
               </li>
               <!-- <li class="nav-item">
                 <a class="nav-link" href="#">Page</a>
@@ -93,8 +129,8 @@
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Language</a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="index.html">English</a>
-                  <a class="dropdown-item" href="#pl">Polski</a>
+                  <a class="dropdown-item" href="index.html"><span class="flag-icon flag-icon-us"></span> English</a>
+                  <a class="dropdown-item" href="#pl"><span class="flag-icon flag-icon-pl"></span> Polski</a>
                 </div>
               </li>
             </ul>
@@ -104,10 +140,10 @@
 
       <div id="page1">
         <div class="row">
-          <div class="col">
-            jakiś mj ryjec
+          <div class="col-5">
+            <img src="images/przemek.jpg" class="img-fluid shadow mb-5 bg-white rounded">
           </div>
-          <div class="col-4">
+          <div class="col-7">
             opis mnie
           </div>
         </div>
@@ -188,6 +224,32 @@
         prevLI = this;
       }
     }
+
+    var copyEmailBtn = document.querySelector('.js-emailcopybtn');
+    copyEmailBtn.addEventListener('click', function(event) {
+      // Select the email link anchor text
+      var emailLink = document.querySelector('.js-emaillink');
+      var range = document.createRange();
+      range.selectNode(emailLink);
+      window.getSelection().addRange(range);
+
+      try {
+        // Now that we've selected the anchor text, execute the copy command
+        var successful = document.execCommand('copy');
+        var msg = successful ? 'successful' : 'unsuccessful';
+        console.log('Copy email command was ' + msg);
+      } catch (err) {
+        console.log('Oops, unable to copy');
+      }
+
+      // Remove the selections - NOTE: Should use
+      // removeRange(range) when it is supported
+      window.getSelection().removeAllRanges();
+    });
+
+    $(document).ready(function() {
+      $('[data-toggle="popover"]').popover();
+    });
   </script>
 </body>
 
