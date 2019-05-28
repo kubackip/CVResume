@@ -87,6 +87,19 @@ a:focus {
   padding: 20px;
 }
 
+#page5 .col {
+  padding: 10px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 300px;
+  min-width: 250px;
+}
+
+#page5 h2 {
+  text-align: center;
+}
+
 .icon-links {
   display: block;
   margin: auto;
