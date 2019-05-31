@@ -170,6 +170,7 @@ a:focus {
 .footer {
   position: absolute;
   min-width: 250px;
+  max-width: 250px;
   bottom: 0;
   padding: 20px;
   font-size: 0.7em;
