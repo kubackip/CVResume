@@ -1,0 +1,87 @@
+body {
+  background-color: #1d1e24;
+}
+
+.navbar {
+  background-color: #23262b;
+  color: #fcfcfc;
+}
+
+.mainInfo {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  background-color: #23262b;
+  color: #fcfcfc;
+  border-radius: 20px;
+}
+
+.simpleMenu {
+  background-color: #23262b;
+  border-radius: 20px;
+  color: #fcfcfc;
+}
+
+.infoPanel {
+  background-color: #23262b;
+  border-radius: 20px;
+  color: #fcfcfc;
+}
+
+.simpleFooter {
+  background-color: #1d1e24;
+  color: #fcfcfc;
+}
+
+.divButton {
+  margin: 8%;
+  padding: 8%;
+  background-color: crimson;
+  border-radius: 20px;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .simpleMenu {
+    background-color: #23262b;
+    display: block;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    color: #fcfcfc;
+  }
+
+  .infoPanel {
+    background-color: #23262b;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    color: #fcfcfc;
+  }
+
+  .divButton {
+    display: inline-block;
+    margin: 1%;
+    padding: 2%;
+    background-color: crimson;
+    border-radius: 15px;
+    width: 17%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .infoPanel {
+    background-color: #23262b;
+    border-radius: 20px;
+    color: #fcfcfc;
+  }
+
+  .divNavButton {
+    display: inline-block;
+    padding: 10%;
+    margin: 10%;
+    background-color: crimson;
+    border-radius: 15px;
+  }
+}

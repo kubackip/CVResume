@@ -1,47 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Bootstrap 4 Website Example</title>
+    <title>Przemysław Kubacki</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </head>
-  <body style="background-color: #1d1e24; color: #fcfcfc">
+  <body>
     <div class="container">
-      <nav
-        class="navbar navbar-expand bg-dark navbar-dark fixed-bottom d-block d-sm-none"
-      >
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">Link</a>
-          </li>
+      <nav class="navbar navbar-expand fixed-bottom d-block d-sm-none">
+        <ul class="navbar-nav justify-content-center">
+          <li class="nav-item p-2"><div class="divNavButton">O mnie</div></li>
+          <li class="nav-item p-2"><div class="divNavButton">O mnie</div></li>
+          <li class="nav-item p-2"><div class="divNavButton">O mnie</div></li>
+          <li class="nav-item p-2"><div class="divNavButton">O mnie</div></li>
+          <li class="nav-item p-2"><div class="divNavButton">O mnie</div></li>
         </ul>
       </nav>
-      <div
-        class="row mx-auto mx-md-2 px-sm-2 px-md-2"
-        style="
-          margin-top: 40pt;
-          margin-bottom: 40pt;
-          background-color: #23262b;
-          color: #fcfcfc;
-          border-radius: 20px;
-        "
-      >
+      <div class="row mx-auto mx-md-2 px-sm-2 px-md-2 mainInfo">
         <div class="col-sm-4 col-md-4 text-center"><p>Zdjęcie</p></div>
         <div class="col-sm-4 col-md-4 text-center">
           <p>Przemek Kubacki</p>
@@ -51,20 +41,31 @@
 
       <div class="row mx-md-auto">
         <div class="col-md-2 px-sm-1 d-none d-sm-block">
-          <div
-            class="p-3"
-            style="background-color: #23262b; border-radius: 20px"
-          >
-            Krótkie menu
+          <div class="p-3 simpleMenu text-center">
+            <div class="divButton text-center">
+              <i class="fas fa-user fa-3x"></i><br />
+              About
+            </div>
+            <div class="divButton">
+              <i class="fas fa-thumbs-up fa-3x"></i><br />
+              Skills
+            </div>
+            <div class="divButton">
+              <i class="fas fa-graduation-cap fa-3x"></i><br />
+              Career
+            </div>
+            <div class="divButton">
+              <i class="fas fa-database fa-3x"></i><br />
+              Projects
+            </div>
+            <div class="divButton">
+              <i class="fas fa-star fa-3x"></i><br />
+              Hobby
+            </div>
           </div>
         </div>
         <div class="col-md-10 px-sm-1 px-md-2">
-          <div
-            class="p-3"
-            style="background-color: #23262b; border-radius: 20px"
-          >
-            Panel o mnie
-          </div>
+          <div class="p-3 infoPanel">Panel o mnie</div>
         </div>
       </div>
     </div>
