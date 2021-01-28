@@ -1,5 +1,6 @@
 body {
   background-color: #1d1e24;
+  font-family: "Fira Code";
 }
 
 .navbar {
@@ -40,6 +41,8 @@ body {
   padding: 8%;
   background-color: #2e6bf9;
   border-radius: 20px;
+  font-family: "Oswald";
+  font-size: 16px;
   display: block;
 }
 
@@ -55,7 +58,8 @@ img {
 .name {
   margin: auto;
   width: 100%;
-  font-size: larger;
+  font-size: 38px;
+  font-family: "Oswald";
 }
 
 .rowInfo {
@@ -76,10 +80,14 @@ img {
     height: 50%;
   }
 
+  .smallInfo {
+    font-size: 13px;
+  }
+
   .name {
     margin: auto;
     right: -20px;
-    font-size: large;
+    font-size: 30px;
   }
 }
 
@@ -92,6 +100,7 @@ img {
     background-color: #2e6bf9;
     border-radius: 20px;
     display: block;
+    font-size: 15px;
   }
 
   img {
@@ -108,7 +117,7 @@ img {
   }
 
   .name {
-    font-size: medium;
+    font-size: 26px;
   }
 }
 
@@ -148,7 +157,8 @@ img {
     padding: 2%;
     background-color: #2e6bf9;
     border-radius: 20px;
-    width: 17%;
+    width: 16%;
+    font-size: 14px;
   }
 
   img {
@@ -166,12 +176,12 @@ img {
   }
 
   .name {
-    top: -20px;
+    top: -25px;
     z-index: 99;
     position: relative;
     vertical-align: middle;
     right: auto;
-    font-size: medium;
+    font-size: 24px;
   }
 }
 
@@ -193,9 +203,10 @@ img {
 
   .divNavButton {
     text-align: center;
-    font-size: small;
+    font-size: 14px;
+    font-family: "Oswald";
     display: inline-block;
-    padding: 6%;
+    padding: 5%;
     margin: 1%;
     width: 60px;
     background-color: #2e6bf9;
@@ -207,5 +218,6 @@ img {
     z-index: 99;
     position: relative;
     vertical-align: middle;
+    font-size: 23px;
   }
 }
