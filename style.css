@@ -13,18 +13,21 @@ body {
   background-color: #23262b;
   color: #fcfcfc;
   border-radius: 20px;
+  box-shadow: 10px 10px 8px #141518;
 }
 
 .simpleMenu {
   background-color: #23262b;
   border-radius: 20px;
   color: #fcfcfc;
+  box-shadow: 10px 10px 8px #141518;
 }
 
 .infoPanel {
   background-color: #23262b;
   border-radius: 20px;
   color: #fcfcfc;
+  box-shadow: 10px 10px 8px #141518;
 }
 
 .simpleFooter {
@@ -40,6 +43,46 @@ body {
   display: block;
 }
 
+img {
+  height: 275px;
+  position: relative;
+  top: -50px;
+  z-index: 99;
+  border: 13px solid #23262b;
+  border-radius: 55px;
+}
+
+.name {
+  margin: auto;
+  width: 100%;
+  font-size: larger;
+}
+
+.rowInfo {
+  height: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+  img {
+    height: 245px;
+    position: relative;
+    top: -40px;
+    z-index: 99;
+    border: 11px solid #23262b;
+    border-radius: 55px;
+  }
+
+  .rowInfo {
+    height: 50%;
+  }
+
+  .name {
+    margin: auto;
+    right: -20px;
+    font-size: large;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .divButton {
     margin-top: 8px;
@@ -50,9 +93,36 @@ body {
     border-radius: 20px;
     display: block;
   }
+
+  img {
+    height: 220px;
+    position: relative;
+    top: -35px;
+    z-index: 99;
+    border: 11px solid #23262b;
+    border-radius: 55px;
+  }
+
+  .smallInfo {
+    margin: 1%;
+  }
+
+  .name {
+    font-size: medium;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .mainInfo {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: block;
+    background-color: #23262b;
+    color: #fcfcfc;
+    border-radius: 20px;
+    box-shadow: 10px 10px 8px #141518;
+  }
+
   .simpleMenu {
     background-color: #23262b;
     display: block;
@@ -80,9 +150,41 @@ body {
     border-radius: 20px;
     width: 17%;
   }
+
+  img {
+    height: 190px;
+    position: relative;
+    top: -35px;
+    z-index: 99;
+    border: 11px solid #23262b;
+    border-radius: 45px;
+  }
+
+  .smallInfo {
+    top: -20px;
+    margin-top: auto;
+  }
+
+  .name {
+    top: -20px;
+    z-index: 99;
+    position: relative;
+    vertical-align: middle;
+    right: auto;
+    font-size: medium;
+  }
 }
 
 @media screen and (max-width: 576px) {
+  .rowInfo {
+    display: block;
+  }
+
+  .smallInfo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .infoPanel {
     background-color: #23262b;
     border-radius: 20px;
@@ -98,5 +200,12 @@ body {
     width: 60px;
     background-color: #2e6bf9;
     border-radius: 20px;
+  }
+
+  .name {
+    top: -30px;
+    z-index: 99;
+    position: relative;
+    vertical-align: middle;
   }
 }
