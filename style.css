@@ -41,7 +41,7 @@ body {
   padding: 8%;
   background-color: #2e6bf9;
   border-radius: 20px;
-  font-family: "Oswald";
+  font-family: "Lato";
   font-size: 16px;
   display: block;
 }
@@ -59,11 +59,80 @@ img {
   margin: auto;
   width: 100%;
   font-size: 38px;
-  font-family: "Oswald";
+  font-family: "Lato";
 }
 
 .rowInfo {
   height: 50%;
+}
+
+.skillTile {
+  padding: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  max-width: 25%;
+  justify-content: center;
+  background-color: #2e6bf9;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.tilePanel {
+  background-color: inherit;
+  padding: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: auto;
+  justify-content: center;
+  vertical-align: middle;
+  height: 100%;
+  text-align: center;
+}
+
+a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+  transition: 1.8s;
+}
+
+#tilePanelTextJava {
+  font-size: 12px;
+}
+#tilePanelTextSpring {
+  font-size: 12px;
+}
+#tilePanelTextSQL {
+  font-size: 12px;
+}
+#tilePanelTextGit {
+  font-size: 12px;
+}
+#tilePanelTextFront {
+  font-size: 12px;
+}
+#tilePanelTextTest {
+  font-size: 12px;
+}
+#tilePanelTextRest {
+  font-size: 12px;
+}
+#tilePanelTextORM {
+  font-size: 12px;
+}
+#tilePanelTextTools {
+  font-size: 12px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -149,6 +218,7 @@ img {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     color: #fcfcfc;
+    margin-bottom: 70px;
   }
 
   .divButton {
@@ -183,9 +253,42 @@ img {
     right: auto;
     font-size: 24px;
   }
+
+  #tilePanelTextJava {
+    font-size: 10px;
+  }
+  #tilePanelTextSpring {
+    font-size: 10px;
+  }
+  #tilePanelTextSQL {
+    font-size: 10px;
+  }
+  #tilePanelTextGit {
+    font-size: 10px;
+  }
+  #tilePanelTextFront {
+    font-size: 10px;
+  }
+  #tilePanelTextTest {
+    font-size: 10px;
+  }
+  #tilePanelTextRest {
+    font-size: 10px;
+  }
+  #tilePanelTextORM {
+    font-size: 10px;
+  }
+  #tilePanelTextTools {
+    font-size: 10px;
+  }
 }
 
 @media screen and (max-width: 576px) {
+  body {
+    padding-bottom: 90px;
+    font-size: 13px;
+  }
+
   .rowInfo {
     display: block;
   }
@@ -204,7 +307,7 @@ img {
   .divNavButton {
     text-align: center;
     font-size: 14px;
-    font-family: "Oswald";
+    font-family: "Lato";
     display: inline-block;
     padding: 5%;
     margin: 1%;

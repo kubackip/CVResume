@@ -9,6 +9,7 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
@@ -64,17 +65,17 @@
           <p><b>Kubacki</b> <br />Przemysław</p>
         </div>
         <div class="col-md-5 col-lg-6">
-          <div class="row rowInfo align-content-center">
+          <div class="row rowInfo align-content-center mt-n3 mt-md-1">
             <div class="col smallInfo text-center">
               <i class="fas fa-envelope fa-2x"></i><br />
               przemek.kubacki@hotmail.com
             </div>
             <div class="col smallInfo text-center">
-              <i class="fas fa-globe fa-2x"></i><br />
-              kubackip.github.io
+              <i class="fas fa-home fa-2x"></i><br />
+              Pruszcz Gdański, Poland
             </div>
           </div>
-          <div class="row rowInfo align-content-center mt-2">
+          <div class="row rowInfo align-content-center mt-2 mt-md-n1">
             <div class="col smallInfo text-center">
               <i class="fab fa-github fa-2x"></i><br />
               github.com/kubackip
@@ -104,7 +105,7 @@
             </div>
             <div class="divButton">
               <i class="fas fa-database fa-3x"></i><br />
-              Project
+              Projects
             </div>
             <div class="divButton">
               <i class="fas fa-star fa-3x"></i><br />
@@ -113,7 +114,178 @@
           </div>
         </div>
         <div class="col-md-10 px-sm-1 px-md-2">
-          <div class="p-3 infoPanel">Panel o mnie</div>
+          <div class="p-3 infoPanel mt-sm-n3 mt-md-0">
+            <h4>About me</h4>
+            My name is Przemysław Kubacki, and I'm pleased to welcome you to my
+            humble website.
+            <br /><br />
+            I will try to present myself briefly, my skills, programming
+            languages I do know, programming projects i've made, my education
+            and my hobby.
+            <br /><br />
+            I am 25 years old, and I'm from Gdańsk, Poland. I studied Biomedical
+            Engineering at the Gdansk University of Technology. I've choosen
+            this degree course, because of combination of different fields of
+            knowledge, such as programming, biomedicine or electronics. I
+            program mainly in Java. That's what I value about this programming
+            language, is its multifunctionality, number of additional libraries
+            or frameworks, and large and helpful community.
+            <br /><br /><br />
+            <h4>Skills</h4>
+            <div class="row">
+              <div class="col-4">
+                <div class="tilePanel" id="tilePanelJava">
+                  <a
+                    class="tilePanelText"
+                    data-toggle="collapse"
+                    data-target="#tilePanelTextJava"
+                  >
+                    <b>Java</b>
+                  </a>
+                  <div id="tilePanelTextJava" class="collapse">
+                    Object Oriented Programming
+                    <br />Java 8 <br />JavaFX <br />Builder, Factory
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="tilePanel" id="tilePanelSpring">
+                  <a
+                    class="tilePanelText"
+                    data-toggle="collapse"
+                    data-target="#tilePanelTextSpring"
+                  >
+                    <b>Spring Boot</b>
+                  </a>
+                  <div id="tilePanelTextSpring" class="collapse">
+                    Security <br />
+                    Entity <br />
+                    Controller <br />
+                    Service <br />
+                    MVC <br />
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="tilePanel" id="tilePanelSQL">
+                  <a
+                    class="tilePanelText"
+                    data-toggle="collapse"
+                    data-target="#tilePanelTextSQL"
+                  >
+                    <b>SQL</b>
+                  </a>
+                  <div id="tilePanelTextSQL" class="collapse">
+                    PostgreSQL <br />MySQL <br />JDBC
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row text-center">
+              <div class="col-4">
+                <div class="tilePanel" id="tilePanelGit">
+                  <a
+                    class="tilePanelText"
+                    data-toggle="collapse"
+                    data-target="#tilePanelTextGit"
+                  >
+                    <b>GIT</b>
+                  </a>
+                  <div id="tilePanelTextGit" class="collapse">
+                    Branches
+                    <br />Fork
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="tilePanel" id="tilePanelFront">
+                  <a
+                    class="tilePanelText"
+                    data-toggle="collapse"
+                    data-target="#tilePanelTextFront"
+                  >
+                    <b>Frontend</b>
+                  </a>
+                  <div id="tilePanelTextFront" class="collapse">
+                    HTML <br />
+                    cSS <br />Bootstrap <br />
+                    JS (Simple Scripts)
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="tilePanel" id="tilePanelTest">
+                  <a
+                    class="tilePanelText"
+                    data-toggle="collapse"
+                    data-target="#tilePanelTextTest"
+                  >
+                    <b>Testing</b>
+                  </a>
+                  <div id="tilePanelTextTest" class="collapse">
+                    JUnit <br />Manual Testing
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row text-center">
+              <div class="col-4">
+                <div class="tilePanel" id="tilePanelRest">
+                  <a
+                    class="tilePanelText"
+                    data-toggle="collapse"
+                    data-target="#tilePanelTextRest"
+                  >
+                    <b>Rest Api</b>
+                  </a>
+                  <div id="tilePanelTextRest" class="collapse">
+                    Spring Boot REST <br />JSON
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="tilePanel" id="tilePanelORM">
+                  <a
+                    class="tilePanelText"
+                    data-toggle="collapse"
+                    data-target="#tilePanelTextORM"
+                  >
+                    <b>ORM</b>
+                  </a>
+                  <div id="tilePanelTextORM" class="collapse">
+                    Hibernate <br />JPA
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="tilePanel" id="tilePanelTools">
+                  <a
+                    class="tilePanelText"
+                    data-toggle="collapse"
+                    data-target="#tilePanelTextTools"
+                  >
+                    <b>Dev Tools</b>
+                  </a>
+                  <div id="tilePanelTextTools" class="collapse">
+                    Netbeans <br />Visual Studio Code <br />pgAdmin4 <br />Scene
+                    Builder <br />Postman <br />Github <br />gitg <br />Ubuntu
+                    20.10
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <br /><br /><br />
+            <h4>Career</h4>
+
+            <br /><br /><br />
+            <h4>Projects</h4>
+
+            <br /><br /><br />
+            <h4>Hobby</h4>
+          </div>
         </div>
       </div>
     </div>
@@ -123,5 +295,204 @@
     >
       Created by Przemysław Kubacki 2021 - Thank You for visiting my Website!
     </div>
+
+    <script>
+      $(".tilePanelText").click(function () {
+        if (this.closest('[class^="col-4"]')) {
+          $(this)
+            .closest('[class^="col-4"]')
+            .toggleClass("col-4 col-6")
+            .siblings()
+            .removeClass("col-4")
+            .addClass("col-3");
+        } else if (this.closest('[class^="col-6"]')) {
+          $(this)
+            .closest('[class^="col-6"]')
+            .toggleClass("col-6 col-4")
+            .siblings()
+            .removeClass("col-3")
+            .addClass("col-4");
+        } else if (this.closest('[class^="col-3"]')) {
+          $(this)
+            .closest('[class^="col-3"]')
+            .toggleClass("col-3 col-6")
+            .siblings()
+            .removeClass("col-3")
+            .removeClass("col-6")
+            .addClass("col-3");
+        }
+      });
+
+      var tilePanelJava = document.getElementById("tilePanelJava");
+      if (tilePanelJava.addEventListener) {
+        tilePanelJava.addEventListener(
+          "click",
+          function () {
+            // $("#tilePanelTextJava").collapse("hide");
+            $("#tilePanelTextSpring").collapse("hide");
+            $("#tilePanelTextSQL").collapse("hide");
+            // $("#tilePanelTextGit").collapse("hide");
+            // $("#tilePanelTextFront").collapse("hide");
+            // $("#tilePanelTextTest").collapse("hide");
+            // $("#tilePanelTextRest").collapse("hide");
+            // $("#tilePanelTextORM").collapse("hide");
+            // $("#tilePanelTextTools").collapse("hide");
+          },
+          false
+        );
+      }
+
+      var tilePanelSpring = document.getElementById("tilePanelSpring");
+      if (tilePanelSpring.addEventListener) {
+        tilePanelSpring.addEventListener(
+          "click",
+          function () {
+            $("#tilePanelTextJava").collapse("hide");
+            // $("#tilePanelTextSpring").collapse("hide");
+            $("#tilePanelTextSQL").collapse("hide");
+            // $("#tilePanelTextGit").collapse("hide");
+            // $("#tilePanelTextFront").collapse("hide");
+            // $("#tilePanelTextTest").collapse("hide");
+            // $("#tilePanelTextRest").collapse("hide");
+            // $("#tilePanelTextORM").collapse("hide");
+            // $("#tilePanelTextTools").collapse("hide");
+          },
+          false
+        );
+      }
+
+      var tilePanelSQL = document.getElementById("tilePanelSQL");
+      if (tilePanelSQL.addEventListener) {
+        tilePanelSQL.addEventListener(
+          "click",
+          function () {
+            $("#tilePanelTextJava").collapse("hide");
+            $("#tilePanelTextSpring").collapse("hide");
+            // $("#tilePanelTextSQL").collapse("hide");
+            // $("#tilePanelTextGit").collapse("hide");
+            // $("#tilePanelTextFront").collapse("hide");
+            // $("#tilePanelTextTest").collapse("hide");
+            // $("#tilePanelTextRest").collapse("hide");
+            // $("#tilePanelTextORM").collapse("hide");
+            // $("#tilePanelTextTools").collapse("hide");
+          },
+          false
+        );
+      }
+
+      var tilePanelGit = document.getElementById("tilePanelGit");
+      if (tilePanelGit.addEventListener) {
+        tilePanelGit.addEventListener(
+          "click",
+          function () {
+            // $("#tilePanelTextJava").collapse("hide");
+            // $("#tilePanelTextSpring").collapse("hide");
+            // $("#tilePanelTextSQL").collapse("hide");
+            // $("#tilePanelTextGit").collapse("hide");
+            $("#tilePanelTextFront").collapse("hide");
+            $("#tilePanelTextTest").collapse("hide");
+            // $("#tilePanelTextRest").collapse("hide");
+            // $("#tilePanelTextORM").collapse("hide");
+            // $("#tilePanelTextTools").collapse("hide");
+          },
+          false
+        );
+      }
+
+      var tilePanelFront = document.getElementById("tilePanelFront");
+      if (tilePanelFront.addEventListener) {
+        tilePanelFront.addEventListener(
+          "click",
+          function () {
+            // $("#tilePanelTextJava").collapse("hide");
+            // $("#tilePanelTextSpring").collapse("hide");
+            // $("#tilePanelTextSQL").collapse("hide");
+            $("#tilePanelTextGit").collapse("hide");
+            // $("#tilePanelTextFront").collapse("hide");
+            $("#tilePanelTextTest").collapse("hide");
+            // $("#tilePanelTextRest").collapse("hide");
+            // $("#tilePanelTextORM").collapse("hide");
+            // $("#tilePanelTextTools").collapse("hide");
+          },
+          false
+        );
+      }
+
+      var tilePanelTest = document.getElementById("tilePanelTest");
+      if (tilePanelTest.addEventListener) {
+        tilePanelTest.addEventListener(
+          "click",
+          function () {
+            // $("#tilePanelTextJava").collapse("hide");
+            // $("#tilePanelTextSpring").collapse("hide");
+            // $("#tilePanelTextSQL").collapse("hide");
+            $("#tilePanelTextGit").collapse("hide");
+            $("#tilePanelTextFront").collapse("hide");
+            // $("#tilePanelTextTest").collapse("hide");
+            // $("#tilePanelTextRest").collapse("hide");
+            // $("#tilePanelTextORM").collapse("hide");
+            // $("#tilePanelTextTools").collapse("hide");
+          },
+          false
+        );
+      }
+
+      var tilePanelRest = document.getElementById("tilePanelRest");
+      if (tilePanelRest.addEventListener) {
+        tilePanelRest.addEventListener(
+          "click",
+          function () {
+            // $("#tilePanelTextJava").collapse("hide");
+            // $("#tilePanelTextSpring").collapse("hide");
+            // $("#tilePanelTextSQL").collapse("hide");
+            // $("#tilePanelTextGit").collapse("hide");
+            // $("#tilePanelTextFront").collapse("hide");
+            // $("#tilePanelTextTest").collapse("hide");
+            // $("#tilePanelTextRest").collapse("hide");
+            $("#tilePanelTextORM").collapse("hide");
+            $("#tilePanelTextTools").collapse("hide");
+          },
+          false
+        );
+      }
+
+      var tilePanelORM = document.getElementById("tilePanelORM");
+      if (tilePanelORM.addEventListener) {
+        tilePanelORM.addEventListener(
+          "click",
+          function () {
+            // $("#tilePanelTextJava").collapse("hide");
+            // $("#tilePanelTextSpring").collapse("hide");
+            // $("#tilePanelTextSQL").collapse("hide");
+            // $("#tilePanelTextGit").collapse("hide");
+            // $("#tilePanelTextFront").collapse("hide");
+            // $("#tilePanelTextTest").collapse("hide");
+            $("#tilePanelTextRest").collapse("hide");
+            // $("#tilePanelTextORM").collapse("hide");
+            $("#tilePanelTextTools").collapse("hide");
+          },
+          false
+        );
+      }
+
+      var tilePanelTools = document.getElementById("tilePanelTools");
+      if (tilePanelTools.addEventListener) {
+        tilePanelTools.addEventListener(
+          "click",
+          function () {
+            // $("#tilePanelTextJava").collapse("hide");
+            // $("#tilePanelTextSpring").collapse("hide");
+            // $("#tilePanelTextSQL").collapse("hide");
+            // $("#tilePanelTextGit").collapse("hide");
+            // $("#tilePanelTextFront").collapse("hide");
+            // $("#tilePanelTextTest").collapse("hide");
+            $("#tilePanelTextRest").collapse("hide");
+            $("#tilePanelTextORM").collapse("hide");
+            // $("#tilePanelTextTools").collapse("hide");
+          },
+          false
+        );
+      }
+    </script>
   </body>
 </html>
