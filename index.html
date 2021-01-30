@@ -9,6 +9,7 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
@@ -24,31 +25,31 @@
     <div class="container">
       <nav class="navbar navbar-expand fixed-bottom d-block d-sm-none">
         <ul class="navbar-nav justify-content-center">
-          <li class="nav-item p-2">
+          <li class="nav-item p-2" id="navAbout">
             <div class="divNavButton">
               <i class="fas fa-user fa-1x"></i><br />
               About
             </div>
           </li>
-          <li class="nav-item p-2">
+          <li class="nav-item p-2" id="navSkills">
             <div class="divNavButton">
               <i class="fas fa-thumbs-up fa-1x"></i><br />
               Skills
             </div>
           </li>
-          <li class="nav-item p-2">
+          <li class="nav-item p-2" id="navCareer">
             <div class="divNavButton">
               <i class="fas fa-graduation-cap fa-1x"></i><br />
               Career
             </div>
           </li>
-          <li class="nav-item p-2">
+          <li class="nav-item p-2" id="navProjects">
             <div class="divNavButton">
               <i class="fas fa-database fa-1x"></i><br />
               Projects
             </div>
           </li>
-          <li class="nav-item p-2">
+          <li class="nav-item p-2" id="navHobby">
             <div class="divNavButton">
               <i class="fas fa-star fa-1x"></i><br />
               Hobby
@@ -90,31 +91,31 @@
       <div class="row mx-md-auto">
         <div class="col-md-2 px-sm-1 d-none d-sm-block">
           <div class="p-3 simpleMenu text-center">
-            <div class="divButton text-center">
+            <div class="divButton text-center" id="menuAbout">
               <i class="fas fa-user fa-3x"></i><br />
               About
             </div>
-            <div class="divButton">
+            <div class="divButton" id="menuSkills">
               <i class="fas fa-thumbs-up fa-3x"></i><br />
               Skills
             </div>
-            <div class="divButton">
+            <div class="divButton" id="menuCareer">
               <i class="fas fa-graduation-cap fa-3x"></i><br />
               Career
             </div>
-            <div class="divButton">
+            <div class="divButton" id="menuProjects">
               <i class="fas fa-database fa-3x"></i><br />
               Projects
             </div>
-            <div class="divButton">
+            <div class="divButton" id="menuHobby">
               <i class="fas fa-star fa-3x"></i><br />
               Hobby
             </div>
           </div>
         </div>
         <div class="col-md-10 px-sm-1 px-md-2">
-          <div class="p-3 infoPanel mt-sm-n3 mt-md-0">
-            <h4>About me</h4>
+          <div class="p-3 infoPanel mt-sm-n3 mt-md-0" id="scrollToAbout">
+            <h4 class="mb-1">About me</h4>
             My name is Przemysław Kubacki, and I'm pleased to welcome you to my
             humble website.
             <br /><br />
@@ -129,8 +130,8 @@
             program mainly in Java. That's what I value about this programming
             language, is its multifunctionality, number of additional libraries
             or frameworks, and large and helpful community.
-            <br /><br /><br />
-            <h4>Skills</h4>
+
+            <h4 class="mt-5 mb-3" id="scrollToSkills">Skills</h4>
 
             <div class="row">
               <div class="col-4">
@@ -209,7 +210,7 @@
                   </a>
                   <div id="tilePanelTextFront" class="collapse">
                     HTML <br />
-                    cSS <br />Bootstrap <br />
+                    CSS <br />Bootstrap <br />
                     JS (Simple Scripts)
                   </div>
                 </div>
@@ -277,8 +278,7 @@
               </div>
             </div>
 
-            <br /><br /><br />
-            <h4>Career & Education</h4>
+            <h4 class="mt-5 mb-3" id="scrollToCareer">Career & Education</h4>
             <br />
 
             <ul class="timeline">
@@ -328,17 +328,106 @@
                 </div>
               </li>
             </ul>
-            <br /><br /><br />
-            <h4>Projects</h4>
 
-            <br /><br /><br />
-            <h4>Hobby</h4>
+            <h4 class="mt-5 mb-3" id="scrollToProjects">Projects</h4>
+
+            <div class="row">
+              <div class="col-12 projects">
+                <h5>Engineering Thesis</h5>
+                <div class="projectsInfo">
+                  Title of my engineer thesis was "Alternative-Augmentative
+                  Communication software for children with cerebral palsy". I've
+                  made Java desktop application, where the user could
+                  communicate by means of sentences composed of pictograms of
+                  his choice. Application were sending a text message to the
+                  Android app on smartphone, using UDP.
+                </div>
+                <div class="projectsInfoLink mt-2">
+                  <a
+                    href="https://github.com/kubackip/Engineering-Thesis.git"
+                    id="gitLink"
+                    ><i class="fab fa-github-square">
+                      Engineering-Thesis.git</i
+                    ></a
+                  >
+                </div>
+              </div>
+
+              <div class="col-12 projects mt-4">
+                <h5>Let's do a settlement</h5>
+                <div class="projectsInfo">
+                  Have you ever been at a party, and different people shopped
+                  for different amounts of money, and you couldn't figure out
+                  who should give money back to whom? Have you ever shopped but
+                  wanted to deduct something you bought just for yourself from
+                  your overall bill? Using this desktop application you can make
+                  a settlement up to 10 people.
+                </div>
+                <div class="projectsInfoLink mt-2">
+                  <a
+                    href="https://github.com/kubackip/LetsDoSettlement.git"
+                    id="gitLink"
+                    ><i class="fab fa-github-square">
+                      LetsDoSettlement.git</i
+                    ></a
+                  >
+                </div>
+              </div>
+
+              <div class="col-12 projects mt-4">
+                <h5>Random Number Generator</h5>
+                <div class="projectsInfo">
+                  This simple program generates a pseudo-random number from a
+                  user-specified range. You can generate int, double and float.
+                  Easy, simple, fast.
+                </div>
+                <div class="projectsInfoLink mt-2">
+                  <a
+                    href="https://github.com/kubackip/RandomNumberGenerator.git"
+                    id="gitLink"
+                    ><i class="fab fa-github-square">
+                      RandomNumberGenerator.git</i
+                    ></a
+                  >
+                </div>
+              </div>
+            </div>
+            <h4 class="mt-5 mb-3" id="scrollToHobby">Hobby</h4>
+            <div class="row">
+              <div class="col-12">
+                I enjoy programming a lot, it can be challenging but when you
+                manage to solve a problem it is very satisfying. But programming
+                isn't the only thing I do! Here are examples of couple of my
+                interests.
+              </div>
+
+              <div class="col-12 projects mt-3">
+                <h5>Historic Reconstruction</h5>
+                <div class="projectsInfo">
+                  I'm interested in reconstruction of early XV century. I adore
+                  visiting castles, going to medieval festivals, and i've also
+                  made some of medieval armor like chainmail or breastplate.
+                </div>
+              </div>
+
+              <div class="col-12 projects mt-4">
+                <h5>Sport Shooting</h5>
+                <div class="projectsInfo">
+                  The first time I went to a shooting range was over 6 years
+                  ago. Already after the first shot I knew this was it! I like
+                  that feeling of adrenaline before each shot, and the smell of
+                  gunpowder afterwards. If you have never been to a shooting
+                  range, I highly recommend you to try it at least once.
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
     <div
-      class="fixed-bottom text-center d-none d-sm-block"
+      class="text-center d-none d-sm-block"
       style="background-color: #1d1e24; color: #fcfcfc"
     >
       Created by Przemysław Kubacki 2021 - Thank You for visiting my Website!
@@ -540,6 +629,123 @@
           },
           false
         );
+
+        $("#menuAbout").click(function () {
+          $([document.documentElement, document.body]).animate(
+            {
+              scrollTop: $("#scrollToAbout").offset().top,
+            },
+            1500
+          );
+        });
+
+        $("#navAbout").click(function () {
+          $([document.documentElement, document.body]).animate(
+            {
+              scrollTop: $("#scrollToAbout").offset().top,
+            },
+            1500
+          );
+        });
+
+        $("#menuSkills").click(function () {
+          $([document.documentElement, document.body]).animate(
+            {
+              scrollTop: $("#scrollToSkills").offset().top,
+            },
+            1500
+          );
+        });
+
+        $("#navSkills").click(function () {
+          $([document.documentElement, document.body]).animate(
+            {
+              scrollTop: $("#scrollToSkills").offset().top,
+            },
+            1500
+          );
+        });
+
+        $("#menuCareer").click(function () {
+          $([document.documentElement, document.body]).animate(
+            {
+              scrollTop: $("#scrollToCareer").offset().top,
+            },
+            1500
+          );
+        });
+
+        $("#navCareer").click(function () {
+          $([document.documentElement, document.body]).animate(
+            {
+              scrollTop: $("#scrollToCareer").offset().top,
+            },
+            1500
+          );
+        });
+
+        $("#menuProjects").click(function () {
+          $([document.documentElement, document.body]).animate(
+            {
+              scrollTop: $("#scrollToProjects").offset().top,
+            },
+            1500
+          );
+        });
+
+        $("#navProjects").click(function () {
+          $([document.documentElement, document.body]).animate(
+            {
+              scrollTop: $("#scrollToProjects").offset().top,
+            },
+            1500
+          );
+        });
+
+        $("#menuHobby").click(function () {
+          $([document.documentElement, document.body]).animate(
+            {
+              scrollTop: $("#scrollToHobby").offset().top,
+            },
+            1500
+          );
+        });
+
+        $("#navHobby").click(function () {
+          $([document.documentElement, document.body]).animate(
+            {
+              scrollTop: $("#scrollToHobby").offset().top,
+            },
+            1500
+          );
+        });
+
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+          scrollFunction();
+        };
+
+        function scrollFunction() {
+          if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+          ) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          // document.body.scrollTop = 0;
+          // document.documentElement.scrollTop = 0;
+          document.body.scrollTo({ top: 0, behavior: "smooth" });
+          document.documentElement.scrollTo({ top: 0, behavior: "smooth" });
+        }
       }
     </script>
   </body>
